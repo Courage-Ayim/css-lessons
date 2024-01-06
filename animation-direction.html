@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animationdirection{
+            0%{
+                background-color: white;
+            }
+            25%{
+                background-color: green;
+            }
+            50%{
+                background-color: red;
+            }
+            75%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+        .box{
+            margin: 0 auto;
+            height: 150px;
+            width: 150px;
+            border: 1px solid #aaa;
+            animation-name: animationdirection;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            animation-iteration-count: 4;
+            animation-direction: reverse ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Direction</h1>
+    <div class="box"></div>
+</body>
+</html>

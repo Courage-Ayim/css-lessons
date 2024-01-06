@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animation{
+            0%{
+                margin-left: 0;
+            }
+            100%{
+                margin-left: 200px;
+            }
+        }
+        .box{
+            margin: 0;
+            height: 150px;
+            width: 150px;
+            border: 1px solid #aaa;
+            background-color: black;
+            animation-name: animation;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 5;
+            animation-delay: 0;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Timing Function</h1>
+  
+    <div class="box"></div>
+</body>
+</html>

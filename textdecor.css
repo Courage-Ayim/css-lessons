@@ -1,0 +1,14 @@
+span.underline{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+span.overline{
+    text-decoration: overline;
+
+}
+span.strike{
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-style: dotted;
+    color: pink;
+}

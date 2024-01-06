@@ -1,0 +1,16 @@
+p.right{
+    text-align: left;
+    border: 1px solid black;
+}
+p.left{
+    text-align: right;
+    border: 1px solid green;
+}
+p.center{
+    text-align: center;
+    border: 1px solid red;
+}
+p.justified{
+    text-align: justify;
+    border: 1px solid blue;
+}

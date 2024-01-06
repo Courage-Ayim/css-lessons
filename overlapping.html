@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rel{
+            margin: 0;
+            padding: 0;
+            height: 450px;
+            border: 1px solid red;
+            background-color: #fff; }
+            .abs{
+                position: absolute;
+                display: inline;
+                width: 50px;
+                height: 50px;
+                border: 1px solid blue;
+                background-color: yellow;
+            }
+            .abs1{
+                  z-index: 1;
+            }
+            .abs2{
+                background-color: red;
+                color: #fff;
+                border-color: red;
+                top:25px
+                left: 25px;
+                z-index: 0;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Overlapping Elementd with Z-index</h>
+        <div class="rel">
+            <div class="abs abs1">abs1</div>
+            <div class="abs abs2">abs2</div>
+        </div>
+</body>
+</html>

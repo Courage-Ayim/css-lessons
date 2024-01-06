@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes BlinkingAnimation{
+                  0%{
+                      opacity: 0;
+                  }
+                  25%{
+                      opacity: 1;
+                  }
+                  50%{
+                      opacity: 0;
+                  }
+                  75%{
+                      opacity: 1;
+                  }
+                  100%{
+                      opacity: 0;
+                  }
+        }
+        .box{
+            margin: 0 auto;
+            height: 150px;
+            width: 150px;
+            border: 1px solid #aaa;
+            background-color: #8c1515;
+            animation-name: BlinkingAnimation;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blinking Animation</h1>
+
+    <div class="box"></div>
+</body>
+</html>

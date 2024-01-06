@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        [website='arkmont.com']{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            border: 10px solid blue
+        }
+        [website="arkmont.com"]:hover
+        {
+            background-color: black;
+            border-color: yellow;
+        }
+        p.child:first-child{
+            background-color: black;
+            color: #fff;
+        }
+        p:last-child{
+            background-color: chartreuse;
+            color: #555
+        }
+        .test{
+            width: 100%;
+            font-size: 30px;
+            padding: 10px 0;
+            color: #333;
+            opacity: 0.25;
+        }
+
+    .test:focus{
+        border: 4px solid black;
+        outline: 0;
+        color: #000;
+        opacity: 1;
+    }
+    input[type="checkbox"]:checked + div.demo{
+        background-color: blue;
+        color: #fff
+    }
+    .disabled,
+    input:disabled {
+        background-color: black;
+        border: 2px red;
+    }
+    .blue{color: blue;}
+    .red{color: red;}
+    .purple{color: purple;}
+
+    .color:not(.red):not(.purple){
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Selectors</h1>    <h2>Hover selector</h2>
+    <div website="arkmont.com"></div>
+    <hr>
+
+    <h2>First Child</h2>
+    <div id="parent">
+        <p class="child">First Child</p>
+        <p class="child">Second Child</p>
+        <p class="child">Third child</p>
+     </div>
+     <hr>
+
+     <h2>Last Child</h2>
+     <div id="demo-area">
+         <p>paragraph1</p>
+         <p>paragraph2</p>
+         <p>paragraph3</p>
+         <p>paragraph4</p>
+     </div>
+     <hr>
+     
+     <h2>Focus mode</h2>
+     <input type="text" class="test">
+     <hr>
+
+     <h2>Checked</h2>
+     <input type="checkbox">
+     <div class="demo">
+         this is my demo content
+     </div>
+
+     <label for="cbox" style="position: relative;">
+    <span style="background: grey; color: black; padding: 5px; display: inline-block;">
+    Click this button</span>
+    </label>
+    <hr>
+    
+    <h2>Disabled</h2>
+    <input type="text" disabled="disabled">
+    <div class="disabled">Disabled</div>
+    <hr>
+    beatae placeat at quia facilis a, inventore fugit, ullam molestiae.
+
+    <h2>Not Selector</h2>
+    <p>
+            beatae placeat at quia <span class="color red">facilis a, inventore fugit, ullam molestiae.
+            beatae placeat at quia facilis a, </span>spainventore fugit, ullam molestiae.
+            beatae placeat at quia facilis a, inventore fugit, ullam molestiae.<span class="color blue">eatae placeat at quia facilis a, inventore fugit, ullam molestiae.
+            beatae placeat at quia facilis a, inventore fugit, ullam molestiae.
+        </span> beatae placeat at quia facilis a, inventore fugit, ullam molestiae.<span class="color red">
+           </span> beatae placeat at quia facilis a, inventore fugit, ullam molestiae.
+            beatae placeat at quia facilis a, inventore fugit, ullam molestiae.<span class="color blue">
+            beatae placeat at quia facilis a, inventore fugit, ullam molestiae.
+            beatae placeat at quia facilis a, </span> inventore fugit, ullam molestia <span class="color blue">beatae placeat at quia facilis a,</span> inventore fugit, ullam molestiae.
+            beatae placeat at quia facilis a,<span class="color purple" >inventore fugit, ullam </span></span>molestiae.
+
+
+
+
+
+    </p>
+    
+</body>
+</html>

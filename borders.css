@@ -1,0 +1,9 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    border-color: bisque;
+    border-style: dashed;
+    border-width: 10px;
+}

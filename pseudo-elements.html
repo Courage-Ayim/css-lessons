@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    <style>
+        .block{
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            float: right;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            position: relative;
+            z-index: 0;
+        }
+        .block::before{
+            display: inline-block;
+            content: "";
+            background-color: rgb(197, 5, 5);
+            color: #fff;
+            position: absolute;
+            left: -20px;
+             top: -20px;
+             width: 200px;
+             height: 200px;
+             z-index: -1;
+        }.block::after{
+            display: inline-block;
+            content: "";
+            background-color: rgb(26, 24, 24);
+            color: #fff;
+            position: absolute;
+            right: -20px;
+             bottom: -20px;
+             width: 200px;
+             height: 200px;
+             z-index: 0;
+        }
+
+        a[href^='https']{
+            text-decoration: none;
+        }
+        a[href^='https']::after{
+            content: '(secure)';
+            font-size: 12px;
+            color: green;
+        }
+
+        .label.deal::before{
+          content: 'DEAL!!!';
+          background-color: #000;
+          display: inline-block;
+          padding: 5px;
+          color: yellow;
+          font-size: 14px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements</h1>
+
+    <p>Welcome to my website. This is where i code websites.
+     I once coded a website from the remains and ashes and bones from olde websites.
+      For more information <a href="https://website.com/read-more.html">Click Here</a></p>
+
+
+
+    <p>something dark here....................
+        <span class="label deal">$8.50</span>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="block"></div>
+    
+</body>
+</html>

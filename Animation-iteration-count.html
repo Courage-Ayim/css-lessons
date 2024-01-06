@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes IterationAnimation{
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .box{
+            margin: 0 auto;
+            height: 150px;
+            width: 150px;
+            border: 1px solid #aaa;
+            background-color: #8c1515;
+            animation-name: IterationAnimation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+        }
+        .count-4{
+            animation-iteration-count: 4;
+        }
+        </style>
+</head>
+<body>
+    <h1>Animation Iteration Count</h1>
+    <div class="box count-4"></div>
+</body>
+</html>

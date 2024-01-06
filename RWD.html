@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           nav{
+               text-align: left;
+               font-size: 14px;
+               font-weight: bold;
+               padding: 10px;
+           }
+           a {
+               display: flex;
+               flex-direction: column;
+               flex-basis: 15%;
+               flex-grow: 1;
+               flex-shrink: 0;
+               text-decoration: none;
+               color: rgb(12, 11, 11);
+               border: 1px solid red;
+               width: 100px;
+               padding-bottom: 5px;
+                }
+            .center-column{
+                display: inline-block;
+                flex-basis: 50%;
+                text-align: center;
+                font-size: 14px;
+                padding: 0 300px;
+            }
+            .footer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-between;
+            background-color: #ccc;
+            height: 300px;
+        }
+        .col{
+            flex-basis: 20%;
+            flex-shrink: 0;
+            background-color: #ccc;
+            color: #fff;
+            border: 0;
+            height: 150px;
+            justify-items: center;
+            font-size: 20px;
+        }
+        img{
+            padding: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .blue{
+            background-color: blue;
+            border: 1px solid red;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        
+        @media print{
+            nav,
+            footer,
+            .center-column{
+                display: none;
+            }
+            a{
+                border: 0;
+            }
+        }
+        .blue{
+            background-color: blue;
+            border: 1px solid red;
+            font-size: 20px;
+            padding: 20px;
+        }
+        @media(min-width: 300px) and (max-width: 500px)
+        {
+            .blue{
+                background-color: black;
+            }
+        }
+           
+    </style>
+</head>
+<body>
+    <div>
+        <nav>Navigation</nav>
+    <div>
+    <a href="#">Nav 1</a>
+    <a href="#">Nav 2</a>
+    <a href="#">Nav 3</a>
+    </div>
+    <diV>
+        <img src="smiley.jpg" alt="">
+    </diV>
+    <div class="center-column">
+        <h1>Hello World</h1>
+        <p>This is a responsive website</p>
+    </div>
+    <div class="blue"> This is Blue</div>
+    <div class="right-column">
+        <div class="adv">
+
+        </div>
+        <div class="adv">
+
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="col">colum1</div>
+        <div class="col">column2</div>
+        <div class="col">column3</div>
+    </footer>
+    
+</body>
+</html>

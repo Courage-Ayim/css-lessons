@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-parent{
+            display: flex;
+            border: 1px solid red;
+            flex-direction: column;
+        }
+        .flex-parent div{
+            border: 1px solid blue;
+            flex-basis: 33%;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+        }
+        .box1{
+            flex-basis: 50%;
+            flex-shrink: 0;
+            flex-grow: 1;
+           background-color: red;
+           order: 3;
+        }
+        .box2{
+             flex: 0 1 25%;
+             background-color: blue;
+             order: 1;
+        }
+        .box3{
+            flex-basis: 50% ;
+            flex-grow: 1;
+            flex-shrink: 0;
+            order: 2;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex: Equaled Column</h1>
+   <div class="flex-parent">
+    <div class="box1">col1</div>
+    <div class="box2">col2</div>
+    <div class="box3">col3</div>
+    </div>
+</body>
+</html>
